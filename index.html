@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Aishwarya's Skincare</title>
+</head>
+<link rel="stylesheet" href="CSS/style.css">
+<link href="https://fonts.googleapis.com/css2?family=Borel&display=swap" rel="stylesheet">
+<style>
+    /* CSS Reset */
+    body {
+        color: rgb(0, 0, 0);
+        margin: 0px;
+        padding: 0px;
+        background: url(img/cream-cotton-pad-with-copy-space.jpg)no-repeat;
+        background-size: 1400px;
+    }
+
+    .left {
+        display: inline-block;
+        /* border: 2px solid green; */
+        position: absolute;
+        left: 34px;
+        top: 20px;
+    }
+
+    .left img {
+        padding-left: 16px;
+        width: 150px;
+        /* filter: invert(100%); */
+    }
+
+    .left div {
+        font-size: 22px;
+        /* text-align: center; */
+        color: #f2094f;
+    }
+
+    .mid {
+        font-family: 'Borel', cursive;
+        display: block;
+        width: 47%;
+        margin: 19px auto;
+        /* border: 2px solid red; */
+    }
+
+    .right {
+        font-family: 'Borel', cursive;
+        position: absolute;
+        right: 6px;
+        top: 20px;
+        display: inline-block;
+        /* border: 2px solid yellow; */
+    }
+
+    .navbar {
+        display: inline-block;
+    }
+
+    .navbar li {
+        display: inline-block;
+        font-size: 20px;
+    }
+
+    .navbar li a {
+        color: black;
+        text-decoration: none;
+        padding: 16px;
+    }
+
+    .navbar li a:hover,
+    .navbar li a.active {
+        text-decoration: underline;
+        color: crimson;
+    }
+
+    .btn {
+        font-family: 'Josefin Sans', sans-serif;
+        margin: 11px 2px;
+        background-color: #ffe0e5;
+        color: rgb(0, 0, 0);
+        padding: 4px 5px;
+        border: 2px solid rgb(159 161 163);
+        border-radius: 15px;
+        font-size: 15px;
+        cursor: pointer;
+    }
+
+    .btn:hover {
+        background-color: rgb(255, 56, 165);
+    }
+
+    .container {
+        border: 3px solid crimson;
+        margin: 145px 30px;
+        padding: 10px 25px;
+        width: 51%;
+        border-radius: 45px;
+    }
+
+    .form-group input {
+        font-family: 'Josefin Sans', sans-serif;
+        text-align: center;
+        display: block;
+        width: 420px;
+        padding: 2px;
+        border: 2px solid black;
+        margin: 5px auto;
+        font-size: 19px;
+        border-radius: 40px;
+    }
+
+    .container h2{
+        text-align: center;
+    }
+
+    .container button{
+        font-size: 17px;
+        display: block;
+        width: 180px;
+        margin: 10px auto;
+        padding: 8px;
+    }
+
+    .container button:hover{
+        background-color: rgba(248, 87, 127, 0.897);
+        border-color: black;
+    }
+</style>
+
+<body>
+    <header class="header">
+
+        <!-- left box for logo -->
+        <div class="left">
+            <img src="img/logo 2.png" alt="">
+            <div><strong>Aishwarya's Skincare</strong></div>
+        </div>
+
+        <!-- mid box for navbar -->
+        <div class="mid">
+            <div class="navbar">
+                <ul>
+                    <li><a href="#" class="active">Home</a></li>
+                    <li><a href="#">Products</a></li>
+                    <li><a href="#">About us</a></li>
+                    <li><a href="#">Contact us</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- right box for buttons -->
+        <div class="right">
+            <button class="btn"><strong>Take a Skin Test</strong></button>
+            <button class="btn"><strong>Book an Appoinment</strong></button>
+        </div>
+    </header>
+    <div class="container">
+        <h2>Let's Start Taking Care Of Your Skin With Aishwarya's Skincare</h2>
+        <form action="noaction.php">
+            <div class="form-group">
+                <input type="text" name="" placeholder="Name">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Age">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Contact">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Email">
+            </div>
+            <button class="btn"><strong>Register now</strong></button>
+        </form>
+    </div>
+</body>
+
+</html>
